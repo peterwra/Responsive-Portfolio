@@ -1,0 +1,289 @@
+/* Images on portfolio page taken from www.unsplash.com. */
+/* TO DO: Clean up CSS file to combine classes/ids where appropriate. */
+
+body {
+    background: url("../images/background.gif");
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777
+}
+
+#fixedHeader {
+    height: 98px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #cccccc;
+}
+
+#centeredHeader {
+    width: 960px;
+    margin: 0 auto;
+    height: inherit;
+    background-color: inherit;
+    padding: none;
+}
+
+#headerText {
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+    font-size: 30px;
+    float: left;
+    padding: 32px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: right;
+}
+
+li {
+    float: left;
+    padding: 50px 5px;
+    font-size: 20px;
+}
+
+#mainBody {
+    width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+#footerLine {
+    background-color: #4aaaa5;
+    height: 5px;
+}
+
+#tableStyle {
+    width: 66%;
+    padding: 10px 0;
+}
+
+.footer {
+    background-color: #666666;
+    text-align: center;
+    padding: 30px 0 0 0;
+    color: lightgray;
+}
+
+.contactLabel {
+    line-height: 2;
+}
+
+.textBoxFormat {
+    padding: 5px;
+    size: 143;
+}
+
+.buttonAttributes {
+    color: white;
+    background-color: #4aaaa5;
+    border: none;
+    padding: 10px 30px;
+}
+
+.imgPeter {
+    float: left;
+    padding: 15px 20px 5px 0;
+}
+
+.imgPortfolioHangman {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hangman.jpg");
+}
+
+.imgPortfolioRpgGame {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/rpg.jpg");
+}
+
+.imgPortfolioTrivia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/trivia.jpg");
+}
+
+.imgPortfolioWidget {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/widget.jpg");
+}
+
+.imgPortfolioRock {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/rock_paper_scissors.jpg");
+}
+.imgPortfolio {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 250px;
+    position: relative;
+}
+
+.rowPadding {
+    padding: 25px 0;
+}
+
+.imgText {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #4aaaa5;
+    width: 100%;
+    padding: 10px 0;
+}
+
+p {
+    line-height: 30px;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+    text-align: center;
+    float: right;
+}
+
+a:hover {
+    background-color: lightgray;
+}
+
+hr {
+    border-color: lightgray;
+    height: 1px;
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 980px)  {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    #body {
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+
+    #mainBody {
+        width: 500px;
+        /* margin: 30px auto; */
+        /* padding: 20px; */
+        padding: 50px;
+        /* height: auto; */
+        height: 1000px;
+        background-color: purple;
+    }
+    #fixedHeader {
+        position: static;
+    }
+    #footerLine {
+        position: absolute;
+        background-color: #4aaaa5;
+        height: 5px;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #666666;
+        text-align: center;
+        /* padding: 30px 0 0 0; */
+        color: lightgray;
+    }
+    nav{
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
+    #logo{
+      width: 100%;
+    }
+    .auth-image {
+      width: 100%;
+    }
+    .work {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    #mainBody {
+        width: 748px;
+        margin: 30px auto;
+        padding: 20px;
+        height: auto;
+        background-color: red;
+    }
+    #fixedHeader {
+        position: static;
+    }
+    #footerLine {
+        position: absolute;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    nav{
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
+    #logo{
+      width: 100%;
+    }
+    .auth-image {
+      width: 100%;
+    }
+    .work {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px)  {
+    #mainBody {
+        width: 620px;
+        margin: 30px auto;
+        padding: 20px;
+        height: auto;
+        background-color: blue;
+    }
+    #fixedHeader {
+        position: static;
+    }
+    #footerLine {
+        position: absolute;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    nav {
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
+    #logo {
+      width: 100%;
+    }
+    .auth-image {
+      width: 100%;
+    }
+    .work {
+      width: 100%;
+    }
+}
