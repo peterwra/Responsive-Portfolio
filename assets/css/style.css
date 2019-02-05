@@ -162,6 +162,9 @@ hr {
     background-color: lightgray;
 }
 
+/* I could not get media queries to work correctly. */
+/* Found this website to make the footer stick but could not get it to work. https://matthewjamestaylor.com/bottom-footer */
+
 @media screen and (max-width: 980px)  {
     html,
     body {
